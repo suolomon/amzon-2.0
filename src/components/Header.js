@@ -46,8 +46,8 @@ function Header() {
 
             <p className="font-extrabold md:text-sm">Account & lists</p>
           </div>
-          <div className="link">
-            <p>returns</p>
+          <div onClick={() => router.push("/orders")} className="link">
+            <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
           <div
