@@ -12,7 +12,7 @@ import { selectItems } from "../slices/basketSlice";
 function Header() {
   const [session] = useSession();
   const router = useRouter();
-  const items = useSelector(selectItems)
+  const items = useSelector(selectItems);
   return (
     <header>
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">

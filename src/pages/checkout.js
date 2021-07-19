@@ -3,13 +3,13 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import { selectItems, selectTotal } from "../slices/basketSlice";
 import CheckoutProduct from "../components/CheckoutProduct";
-import { useSession, signIn, signOut } from "next-auth/client";
-import Currency from 'react-currency-formatter'
+import { useSession } from "next-auth/client";
+import Currency from "react-currency-formatter";
 
 function Checkout() {
   const items = useSelector(selectItems);
   const [session] = useSession();
-  const total = useSelector(selectTotal)
+  const total = useSelector(selectTotal);
 
   return (
     <div>

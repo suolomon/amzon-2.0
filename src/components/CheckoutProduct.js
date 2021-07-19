@@ -30,8 +30,8 @@ function CheckoutProduct({
   };
 
   const removeItemFromBasket = () => {
-      dispatch(removeFromBasket({id}))
-  }
+    dispatch(removeFromBasket({ id }));
+  };
 
   return (
     <div className="grid grid-cols-5">
@@ -64,7 +64,9 @@ function CheckoutProduct({
         <button onClick={addItemToBasket} className="button">
           Add to Basket
         </button>
-        <button onClick={removeItemFromBasket} className="button">Remove from Basket</button>
+        <button onClick={removeItemFromBasket} className="button">
+          Remove from Basket
+        </button>
       </div>
     </div>
   );
